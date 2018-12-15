@@ -14,7 +14,20 @@
 		CB2ADA1D21C53A5E00F61593 /* News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA1B21C53A5E00F61593 /* News.xcdatamodeld */; };
 		CB2ADA1F21C53A5F00F61593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2ADA1E21C53A5F00F61593 /* Assets.xcassets */; };
 		CB2ADA2221C53A5F00F61593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2ADA2021C53A5F00F61593 /* LaunchScreen.storyboard */; };
-		CB2ADA2D21C53A5F00F61593 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA2C21C53A5F00F61593 /* NewsTests.swift */; };
+		CB2ADA3B21C53EFE00F61593 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA3A21C53EFE00F61593 /* Source.swift */; };
+		CB2ADA3D21C53F9200F61593 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA3C21C53F9200F61593 /* Article.swift */; };
+		CB2ADA4121C5406B00F61593 /* SourceRequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4021C5406B00F61593 /* SourceRequesterProtocol.swift */; };
+		CB2ADA4621C5435B00F61593 /* GetSourceUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4521C5435B00F61593 /* GetSourceUseCaseProtocol.swift */; };
+		CB2ADA4821C5447700F61593 /* GetSourceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4721C5447700F61593 /* GetSourceUseCase.swift */; };
+		CB2ADA4A21C5464500F61593 /* GetArticlesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4921C5464500F61593 /* GetArticlesUseCaseProtocol.swift */; };
+		CB2ADA4C21C546C300F61593 /* GetArticlesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4B21C546C300F61593 /* GetArticlesUseCase.swift */; };
+		CB2ADA4E21C5472500F61593 /* ArticleRequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4D21C5472500F61593 /* ArticleRequesterProtocol.swift */; };
+		CB2ADA5021C548A900F61593 /* BaseRequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4F21C548A900F61593 /* BaseRequesterProtocol.swift */; };
+		CB2ADA5421C54E7F00F61593 /* GetSourceUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5321C54E7F00F61593 /* GetSourceUseCaseTest.swift */; };
+		CB2ADA5621C54EAD00F61593 /* SourceRequesterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5521C54EAD00F61593 /* SourceRequesterMock.swift */; };
+		CB2ADA5821C5539700F61593 /* ErrorNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5721C5539700F61593 /* ErrorNetwork.swift */; };
+		CB2ADA5A21C5546300F61593 /* ArticleRequesterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5921C5546300F61593 /* ArticleRequesterMock.swift */; };
+		CB2ADA5E21C556CB00F61593 /* GetArticlesUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5D21C556CB00F61593 /* GetArticlesUseCaseTest.swift */; };
 		DDED4A43618ABAD947E89703 /* Pods_NewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D051709304BAA9C8C47ADD /* Pods_NewsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +56,21 @@
 		CB2ADA2121C53A5F00F61593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB2ADA2321C53A5F00F61593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB2ADA2821C53A5F00F61593 /* NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB2ADA2C21C53A5F00F61593 /* NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTests.swift; sourceTree = "<group>"; };
 		CB2ADA2E21C53A5F00F61593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2ADA3A21C53EFE00F61593 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		CB2ADA3C21C53F9200F61593 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		CB2ADA4021C5406B00F61593 /* SourceRequesterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceRequesterProtocol.swift; sourceTree = "<group>"; };
+		CB2ADA4521C5435B00F61593 /* GetSourceUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourceUseCaseProtocol.swift; sourceTree = "<group>"; };
+		CB2ADA4721C5447700F61593 /* GetSourceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourceUseCase.swift; sourceTree = "<group>"; };
+		CB2ADA4921C5464500F61593 /* GetArticlesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesUseCaseProtocol.swift; sourceTree = "<group>"; };
+		CB2ADA4B21C546C300F61593 /* GetArticlesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesUseCase.swift; sourceTree = "<group>"; };
+		CB2ADA4D21C5472500F61593 /* ArticleRequesterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequesterProtocol.swift; sourceTree = "<group>"; };
+		CB2ADA4F21C548A900F61593 /* BaseRequesterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequesterProtocol.swift; sourceTree = "<group>"; };
+		CB2ADA5321C54E7F00F61593 /* GetSourceUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourceUseCaseTest.swift; sourceTree = "<group>"; };
+		CB2ADA5521C54EAD00F61593 /* SourceRequesterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceRequesterMock.swift; sourceTree = "<group>"; };
+		CB2ADA5721C5539700F61593 /* ErrorNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetwork.swift; sourceTree = "<group>"; };
+		CB2ADA5921C5546300F61593 /* ArticleRequesterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequesterMock.swift; sourceTree = "<group>"; };
+		CB2ADA5D21C556CB00F61593 /* GetArticlesUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesUseCaseTest.swift; sourceTree = "<group>"; };
 		DD42011EFED140F27726A7D3 /* Pods-NewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +137,8 @@
 		CB2ADA1321C53A5E00F61593 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				CB2ADA3E21C5402E00F61593 /* Data */,
+				CB2ADA3721C53DDB00F61593 /* Domain */,
 				CB2ADA1421C53A5E00F61593 /* AppDelegate.swift */,
 				CB2ADA1621C53A5E00F61593 /* ViewController.swift */,
 				CB2ADA1821C53A5E00F61593 /* Main.storyboard */,
@@ -125,10 +153,93 @@
 		CB2ADA2B21C53A5F00F61593 /* NewsTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB2ADA2C21C53A5F00F61593 /* NewsTests.swift */,
+				CB2ADA5C21C556A400F61593 /* Mocks */,
+				CB2ADA5121C54E3300F61593 /* Domain */,
 				CB2ADA2E21C53A5F00F61593 /* Info.plist */,
 			);
 			path = NewsTests;
+			sourceTree = "<group>";
+		};
+		CB2ADA3721C53DDB00F61593 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA3921C53EBF00F61593 /* UseCases */,
+				CB2ADA3821C53EB600F61593 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CB2ADA3821C53EB600F61593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA3A21C53EFE00F61593 /* Source.swift */,
+				CB2ADA3C21C53F9200F61593 /* Article.swift */,
+				CB2ADA5721C5539700F61593 /* ErrorNetwork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB2ADA3921C53EBF00F61593 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA4521C5435B00F61593 /* GetSourceUseCaseProtocol.swift */,
+				CB2ADA4721C5447700F61593 /* GetSourceUseCase.swift */,
+				CB2ADA4921C5464500F61593 /* GetArticlesUseCaseProtocol.swift */,
+				CB2ADA4B21C546C300F61593 /* GetArticlesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CB2ADA3E21C5402E00F61593 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA3F21C5404900F61593 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CB2ADA3F21C5404900F61593 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA4221C540B500F61593 /* Base */,
+				CB2ADA4021C5406B00F61593 /* SourceRequesterProtocol.swift */,
+				CB2ADA4D21C5472500F61593 /* ArticleRequesterProtocol.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		CB2ADA4221C540B500F61593 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA4F21C548A900F61593 /* BaseRequesterProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CB2ADA5121C54E3300F61593 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA5221C54E4200F61593 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CB2ADA5221C54E4200F61593 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA5321C54E7F00F61593 /* GetSourceUseCaseTest.swift */,
+				CB2ADA5D21C556CB00F61593 /* GetArticlesUseCaseTest.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CB2ADA5C21C556A400F61593 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA5521C54EAD00F61593 /* SourceRequesterMock.swift */,
+				CB2ADA5921C5546300F61593 /* ArticleRequesterMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +392,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2ADA4A21C5464500F61593 /* GetArticlesUseCaseProtocol.swift in Sources */,
+				CB2ADA3B21C53EFE00F61593 /* Source.swift in Sources */,
+				CB2ADA5821C5539700F61593 /* ErrorNetwork.swift in Sources */,
+				CB2ADA4621C5435B00F61593 /* GetSourceUseCaseProtocol.swift in Sources */,
+				CB2ADA4C21C546C300F61593 /* GetArticlesUseCase.swift in Sources */,
 				CB2ADA1721C53A5E00F61593 /* ViewController.swift in Sources */,
+				CB2ADA4E21C5472500F61593 /* ArticleRequesterProtocol.swift in Sources */,
+				CB2ADA4821C5447700F61593 /* GetSourceUseCase.swift in Sources */,
+				CB2ADA5021C548A900F61593 /* BaseRequesterProtocol.swift in Sources */,
+				CB2ADA4121C5406B00F61593 /* SourceRequesterProtocol.swift in Sources */,
 				CB2ADA1D21C53A5E00F61593 /* News.xcdatamodeld in Sources */,
 				CB2ADA1521C53A5E00F61593 /* AppDelegate.swift in Sources */,
+				CB2ADA3D21C53F9200F61593 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2ADA2D21C53A5F00F61593 /* NewsTests.swift in Sources */,
+				CB2ADA5421C54E7F00F61593 /* GetSourceUseCaseTest.swift in Sources */,
+				CB2ADA5621C54EAD00F61593 /* SourceRequesterMock.swift in Sources */,
+				CB2ADA5A21C5546300F61593 /* ArticleRequesterMock.swift in Sources */,
+				CB2ADA5E21C556CB00F61593 /* GetArticlesUseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
