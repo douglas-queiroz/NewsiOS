@@ -22,12 +22,16 @@
 		CB2ADA4A21C5464500F61593 /* GetArticlesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4921C5464500F61593 /* GetArticlesUseCaseProtocol.swift */; };
 		CB2ADA4C21C546C300F61593 /* GetArticlesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4B21C546C300F61593 /* GetArticlesUseCase.swift */; };
 		CB2ADA4E21C5472500F61593 /* ArticleRequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4D21C5472500F61593 /* ArticleRequesterProtocol.swift */; };
-		CB2ADA5021C548A900F61593 /* BaseRequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA4F21C548A900F61593 /* BaseRequesterProtocol.swift */; };
 		CB2ADA5421C54E7F00F61593 /* GetSourceUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5321C54E7F00F61593 /* GetSourceUseCaseTest.swift */; };
 		CB2ADA5621C54EAD00F61593 /* SourceRequesterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5521C54EAD00F61593 /* SourceRequesterMock.swift */; };
 		CB2ADA5821C5539700F61593 /* ErrorNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5721C5539700F61593 /* ErrorNetwork.swift */; };
 		CB2ADA5A21C5546300F61593 /* ArticleRequesterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5921C5546300F61593 /* ArticleRequesterMock.swift */; };
 		CB2ADA5E21C556CB00F61593 /* GetArticlesUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5D21C556CB00F61593 /* GetArticlesUseCaseTest.swift */; };
+		CB2ADA6021C5598700F61593 /* NewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA5F21C5598700F61593 /* NewsApi.swift */; };
+		CB2ADA6321C55B2500F61593 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA6221C55B2500F61593 /* Configuration.swift */; };
+		CB2ADA6521C55C8F00F61593 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA6421C55C8F00F61593 /* Constants.swift */; };
+		CB2ADA6721C55CD000F61593 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA6621C55CD000F61593 /* NetworkConfig.swift */; };
+		CB2ADA6921C55D2500F61593 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA6821C55D2500F61593 /* NetworkConstants.swift */; };
 		DDED4A43618ABAD947E89703 /* Pods_NewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D051709304BAA9C8C47ADD /* Pods_NewsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,12 +69,16 @@
 		CB2ADA4921C5464500F61593 /* GetArticlesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesUseCaseProtocol.swift; sourceTree = "<group>"; };
 		CB2ADA4B21C546C300F61593 /* GetArticlesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesUseCase.swift; sourceTree = "<group>"; };
 		CB2ADA4D21C5472500F61593 /* ArticleRequesterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequesterProtocol.swift; sourceTree = "<group>"; };
-		CB2ADA4F21C548A900F61593 /* BaseRequesterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequesterProtocol.swift; sourceTree = "<group>"; };
 		CB2ADA5321C54E7F00F61593 /* GetSourceUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourceUseCaseTest.swift; sourceTree = "<group>"; };
 		CB2ADA5521C54EAD00F61593 /* SourceRequesterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceRequesterMock.swift; sourceTree = "<group>"; };
 		CB2ADA5721C5539700F61593 /* ErrorNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetwork.swift; sourceTree = "<group>"; };
 		CB2ADA5921C5546300F61593 /* ArticleRequesterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequesterMock.swift; sourceTree = "<group>"; };
 		CB2ADA5D21C556CB00F61593 /* GetArticlesUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesUseCaseTest.swift; sourceTree = "<group>"; };
+		CB2ADA5F21C5598700F61593 /* NewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApi.swift; sourceTree = "<group>"; };
+		CB2ADA6221C55B2500F61593 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CB2ADA6421C55C8F00F61593 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB2ADA6621C55CD000F61593 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		CB2ADA6821C55D2500F61593 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		DD42011EFED140F27726A7D3 /* Pods-NewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +145,7 @@
 		CB2ADA1321C53A5E00F61593 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				CB2ADA6121C55AF800F61593 /* Common */,
 				CB2ADA3E21C5402E00F61593 /* Data */,
 				CB2ADA3721C53DDB00F61593 /* Domain */,
 				CB2ADA1421C53A5E00F61593 /* AppDelegate.swift */,
@@ -211,7 +220,9 @@
 		CB2ADA4221C540B500F61593 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				CB2ADA4F21C548A900F61593 /* BaseRequesterProtocol.swift */,
+				CB2ADA5F21C5598700F61593 /* NewsApi.swift */,
+				CB2ADA6621C55CD000F61593 /* NetworkConfig.swift */,
+				CB2ADA6821C55D2500F61593 /* NetworkConstants.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -242,6 +253,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		CB2ADA6121C55AF800F61593 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA6221C55B2500F61593 /* Configuration.swift */,
+				CB2ADA6421C55C8F00F61593 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +273,7 @@
 				CB2ADA0D21C53A5E00F61593 /* Sources */,
 				CB2ADA0E21C53A5E00F61593 /* Frameworks */,
 				CB2ADA0F21C53A5E00F61593 /* Resources */,
+				3FBA2D029715A92F73C1BAD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,6 +384,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3FBA2D029715A92F73C1BAD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		919E87D82DFB122FF30D2B05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,14 +444,18 @@
 				CB2ADA5821C5539700F61593 /* ErrorNetwork.swift in Sources */,
 				CB2ADA4621C5435B00F61593 /* GetSourceUseCaseProtocol.swift in Sources */,
 				CB2ADA4C21C546C300F61593 /* GetArticlesUseCase.swift in Sources */,
+				CB2ADA6721C55CD000F61593 /* NetworkConfig.swift in Sources */,
 				CB2ADA1721C53A5E00F61593 /* ViewController.swift in Sources */,
+				CB2ADA6321C55B2500F61593 /* Configuration.swift in Sources */,
+				CB2ADA6521C55C8F00F61593 /* Constants.swift in Sources */,
 				CB2ADA4E21C5472500F61593 /* ArticleRequesterProtocol.swift in Sources */,
 				CB2ADA4821C5447700F61593 /* GetSourceUseCase.swift in Sources */,
-				CB2ADA5021C548A900F61593 /* BaseRequesterProtocol.swift in Sources */,
 				CB2ADA4121C5406B00F61593 /* SourceRequesterProtocol.swift in Sources */,
 				CB2ADA1D21C53A5E00F61593 /* News.xcdatamodeld in Sources */,
 				CB2ADA1521C53A5E00F61593 /* AppDelegate.swift in Sources */,
 				CB2ADA3D21C53F9200F61593 /* Article.swift in Sources */,
+				CB2ADA6921C55D2500F61593 /* NetworkConstants.swift in Sources */,
+				CB2ADA6021C5598700F61593 /* NewsApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

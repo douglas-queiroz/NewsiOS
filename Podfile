@@ -12,6 +12,8 @@ target 'News' do
     # Pods for testing
   end
   
-  
+  #Alamofire
+  pod 'AlamofireObjectMapper', '~> 5.0'
+  pod 'Alamofire', '~> 4.5'
 
 end
