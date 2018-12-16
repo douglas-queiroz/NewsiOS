@@ -28,7 +28,7 @@ class SourceListPresenter: SourceListPresenterProtocol {
             
             if let sourceList = sourceList {
                 self.sourceList = sourceList
-                self.view.reloadList(source: sourceList)
+                self.view.reloadList(sourceList: sourceList)
             } else {
                 self.view.showMessage(title: "Error", message: "Error msg", handler: nil)
             }

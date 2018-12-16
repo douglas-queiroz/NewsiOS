@@ -59,8 +59,8 @@ extension SourceListViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension SourceListViewController: SourceListViewProtocol {
     
-    func reloadList(source: [Source]) {
-        self.sourceList = source
+    func reloadList(sourceList: [Source]) {
+        self.sourceList = sourceList
         self.sourceListTableView.reloadData()
     }
     
