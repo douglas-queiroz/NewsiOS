@@ -15,5 +15,9 @@ target 'News' do
   #Alamofire
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'Alamofire', '~> 4.5'
+  
+  #Util
+  pod 'PKHUD', '~> 5.0'
+  pod 'SDWebImage/WebP'
 
 end

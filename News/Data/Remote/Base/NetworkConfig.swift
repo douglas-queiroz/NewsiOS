@@ -8,17 +8,41 @@
 
 import Foundation
 
-struct NetworkConfig {
+class NetworkConfig {
     
-    static var URL_BASE : String {
+    private var serviceConfig: Dictionary<String, Any?>!
+    private static var _sharedInstance: NetworkConfig?
+    static var sharedInstance: NetworkConfig {
         get {
-            return ""
+            if _sharedInstance == nil {
+                let path = Bundle.main.path(forResource: "Environment", ofType: "plist")!
+                let nsDictionary = NSDictionary(contentsOfFile: path)!
+                _sharedInstance = self.init(dic: nsDictionary)
+            }
+            
+            return _sharedInstance!
         }
     }
     
-    static var API_KEY: String {
+    internal required init(dic: NSDictionary) {
+        serviceConfig = dic["Service"] as? Dictionary<String, Any?>
+    }
+    
+    var URL_BASE : String {
         get {
-            return ""
+            return serviceConfig["UrlBase"] as! String
+        }
+    }
+    
+    var URL_VERSION : String {
+        get {
+            return serviceConfig["Version"] as! String
+        }
+    }
+    
+    var API_KEY: String {
+        get {
+            return serviceConfig["ApiKey"] as! String
         }
     }
 }

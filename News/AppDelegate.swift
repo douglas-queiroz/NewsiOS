@@ -16,8 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        setupMainView()
+        
         return true
+    }
+    
+    private func setupMainView() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let mainController = SourceListViewController() as UIViewController
+        let navigationController = UINavigationController(rootViewController: mainController)
+        navigationController.navigationBar.isTranslucent = false
+        
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

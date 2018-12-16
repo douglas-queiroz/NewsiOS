@@ -12,5 +12,5 @@ protocol SourceRequesterProtocol {
     
     typealias ReponseSourceListCompletion = ([Source]?, Error?) -> Void
     
-    func getSourceList(response: ReponseSourceListCompletion)
+    func getSourceList(responseCompletion: @escaping ReponseSourceListCompletion)
 }

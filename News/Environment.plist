@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Service</key>
+	<dict>
+		<key>UrlBase</key>
+		<string>https://newsapi.org/</string>
+		<key>Version</key>
+		<string>v2/</string>
+		<key>ApiKey</key>
+		<string>replace_with_your_api_key</string>
+	</dict>
+</dict>
+</plist>

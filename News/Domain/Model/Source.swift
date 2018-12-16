@@ -7,10 +7,26 @@
 //
 
 import UIKit
+import ObjectMapper
 
-struct Source {
+class Source: Mappable {
+    
+    private let FIELD_TITLE_KEY = "name"
+    private let FIELD_DESCRIPTION_KEY = "description"
+    private let FIELD_URL_KEY = "url"
     
     var title: String?
     var description: String?
     var url: String?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        
+        title       <- map[FIELD_TITLE_KEY]
+        description <- map[FIELD_DESCRIPTION_KEY]
+        url         <- map[FIELD_URL_KEY]
+    }
 }

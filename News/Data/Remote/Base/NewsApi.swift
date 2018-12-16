@@ -10,7 +10,11 @@ import Alamofire
 
 enum NewsApi: URLRequestConvertible {
     
-    static let baseURL = NetworkConfig.URL_BASE
+    private static var baseURL: String {
+        get {
+            return NetworkConfig.sharedInstance.URL_BASE + NetworkConfig.sharedInstance.URL_VERSION
+        }
+    }
     
     case getSources
     case getArticles(domains: String)
@@ -31,7 +35,7 @@ enum NewsApi: URLRequestConvertible {
     }
     
     var params: [String: Any] {
-        var params = [NetworkConstants.API_PARAM_KEY: NetworkConfig.API_KEY as Any]
+        var params = [NetworkConstants.API_PARAM_KEY: NetworkConfig.sharedInstance.API_KEY as Any]
         
         switch self {
         case .getArticles(let domains):
