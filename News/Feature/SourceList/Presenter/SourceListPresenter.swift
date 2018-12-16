@@ -20,7 +20,7 @@ class SourceListPresenter: SourceListPresenterProtocol {
     }
     
     func loadSourceList() {
-        getSourceListUseCase.getSource { (sourceList, error) in
+        getSourceListUseCase.getSourceList { (sourceList, error) in
             if let sourceList = sourceList {
                 self.view.reloadList(source: sourceList)
             } else {

@@ -19,6 +19,10 @@ class Source: Mappable {
     var description: String?
     var url: String?
     
+    init() {
+        
+    }
+    
     required init?(map: Map) {
         
     }

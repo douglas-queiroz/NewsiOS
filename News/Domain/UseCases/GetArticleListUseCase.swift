@@ -16,7 +16,7 @@ class GetArticleListUseCase: GetArticleListUseCaseProtocol {
         self.articleRequester = articleRequester
     }
     
-    func getArticle(source: String, listener: @escaping GetArticleListCompletion) {
+    func getArticleList(source: String, listener: @escaping GetArticleListCompletion) {
         articleRequester.getArticleList(source: source, responseCompletion: listener)
     }
 }

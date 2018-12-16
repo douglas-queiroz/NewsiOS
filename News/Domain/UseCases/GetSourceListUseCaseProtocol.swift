@@ -12,5 +12,5 @@ protocol GetSourceListUseCaseProtocol {
     
     typealias GetSourceListCompletion = ([Source]?, Error?) -> Void
     
-    func getSource(listener: @escaping GetSourceListCompletion)
+    func getSourceList(listener: @escaping GetSourceListCompletion)
 }

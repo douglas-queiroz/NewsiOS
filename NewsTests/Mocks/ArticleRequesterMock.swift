@@ -13,8 +13,10 @@ class ArticleRequesterMock: ArticleRequesterProtocol {
     
     var articleList: [Article]?
     var error: Error?
+    var source: String?
     
-    func getArticleList(response: ReponseArticleListCompletion) {
-        response(articleList, error)
+    func getArticleList(source: String, responseCompletion: ReponseArticleListCompletion) {
+        self.source = source
+        responseCompletion(articleList, error)
     }
 }

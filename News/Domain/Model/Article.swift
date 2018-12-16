@@ -27,6 +27,10 @@ class Article: Mappable {
         return "articles"
     }
     
+    init() {
+        
+    }
+    
     required init?(map: Map) {
         
     }

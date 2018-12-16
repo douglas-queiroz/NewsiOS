@@ -12,21 +12,21 @@ import XCTest
 class GetSourceUseCaseTest: XCTestCase {
 
     private var requesterMock: SourceRequesterMock!
-    private var getSourceUseCase: GetSourceUseCaseProtocol!
+    private var getSourceListUseCase: GetSourceListUseCaseProtocol!
     
     override func setUp() {
         requesterMock = SourceRequesterMock()
-        getSourceUseCase = GetSourceUseCase(sourceRequester: requesterMock)
+        self.getSourceListUseCase = GetSourceListUseCase(sourceRequester: requesterMock)
     }
 
     func testGetSource() {
         
         requesterMock.sourceList = [Source(), Source(), Source()]
         
-        getSourceUseCase.getSource { (sourceList, error) in
+        getSourceListUseCase.getSourceList { (sourceList, error) in
             
             XCTAssertNotNil(sourceList)
-            XCTAssertEqual(sourceList?.count, requesterMock.sourceList?.count)
+            XCTAssertEqual(sourceList?.count, self.requesterMock.sourceList?.count)
             XCTAssertNil(error)
         }
     }
@@ -35,7 +35,7 @@ class GetSourceUseCaseTest: XCTestCase {
         
         requesterMock.error = ErrorNetwork()
         
-        getSourceUseCase.getSource { (sourceList, error) in
+        getSourceListUseCase.getSourceList { (sourceList, error) in
             
             XCTAssertNotNil(error)
             XCTAssertNil(sourceList)

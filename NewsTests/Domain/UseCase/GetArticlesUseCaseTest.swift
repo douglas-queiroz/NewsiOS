@@ -12,34 +12,36 @@ import XCTest
 class GetArticlesUseCaseTest: XCTestCase {
     
     private var requesterMock: ArticleRequesterMock!
-    private var getArticlesUseCase: GetArticlesUseCaseProtocol!
+    private var getArticleListUseCase: GetArticleListUseCaseProtocol!
     
     override func setUp() {
         requesterMock = ArticleRequesterMock()
-        getArticlesUseCase = GetArticlesUseCase(articleRequester: requesterMock)
+        getArticleListUseCase = GetArticleListUseCase(articleRequester: requesterMock)
     }
     
     func testGetSource() {
-        
+        let source = "source"
         requesterMock.articleList = [Article(), Article(), Article()]
         
-        getArticlesUseCase.getArticle { (articleList, error) in
+        getArticleListUseCase.getArticleList(source: source, listener: { (articleList, error) in
             
             XCTAssertNotNil(articleList)
-            XCTAssertEqual(articleList?.count, requesterMock.articleList?.count)
+            XCTAssertEqual(articleList?.count, self.requesterMock.articleList?.count)
             XCTAssertNil(error)
-        }
+            XCTAssertEqual(source, self.requesterMock.source)
+        })
     }
     
     func testGetSource_withError() {
-        
+        let source = "source"
         requesterMock.error = ErrorNetwork()
         
-        getArticlesUseCase.getArticle { (articleList, error) in
+        getArticleListUseCase.getArticleList(source: source, listener: { (articleList, error) in
             
             XCTAssertNotNil(error)
             XCTAssertNil(articleList)
-        }
+            XCTAssertEqual(source, self.requesterMock.source)
+        })
     }
     
     

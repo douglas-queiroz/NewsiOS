@@ -16,7 +16,7 @@ class GetSourceListUseCase: GetSourceListUseCaseProtocol {
         self.sourceRequester = sourceRequester
     }
     
-    func getSource(listener: @escaping GetSourceListCompletion) {
+    func getSourceList(listener: @escaping GetSourceListCompletion) {
         
         sourceRequester.getSourceList(responseCompletion: listener)
     }

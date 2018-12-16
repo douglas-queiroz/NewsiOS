@@ -14,7 +14,7 @@ class SourceRequesterMock: SourceRequesterProtocol {
     var sourceList: [Source]?
     var error: Error?
     
-    func getSourceList(response: ReponseSourceListCompletion) {
-        response(sourceList, error)
+    func getSourceList(responseCompletion: ReponseSourceListCompletion) {
+        responseCompletion(sourceList, error)
     }
 }
