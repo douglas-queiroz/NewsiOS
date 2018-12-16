@@ -48,6 +48,9 @@
 		CB2ADA9821C5C12200F61593 /* SourceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2ADA9621C5C12200F61593 /* SourceListViewController.xib */; };
 		CB2ADA9A21C5C2E300F61593 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA9921C5C2E300F61593 /* RequestExtension.swift */; };
 		CB2ADA9C21C5C39400F61593 /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB2ADA9B21C5C39400F61593 /* Environment.plist */; };
+		CB2ADAA021C5D6C100F61593 /* SourceListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADA9F21C5D6C100F61593 /* SourceListPresenterTest.swift */; };
+		CB2ADAA221C5D6F900F61593 /* GetSourceListUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADAA121C5D6F900F61593 /* GetSourceListUseCaseMock.swift */; };
+		CB2ADAA421C5D95500F61593 /* SourceListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADAA321C5D95500F61593 /* SourceListViewMock.swift */; };
 		DDED4A43618ABAD947E89703 /* Pods_NewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D051709304BAA9C8C47ADD /* Pods_NewsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +114,9 @@
 		CB2ADA9621C5C12200F61593 /* SourceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceListViewController.xib; sourceTree = "<group>"; };
 		CB2ADA9921C5C2E300F61593 /* RequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 		CB2ADA9B21C5C39400F61593 /* Environment.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Environment.plist; sourceTree = "<group>"; };
+		CB2ADA9F21C5D6C100F61593 /* SourceListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceListPresenterTest.swift; sourceTree = "<group>"; };
+		CB2ADAA121C5D6F900F61593 /* GetSourceListUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourceListUseCaseMock.swift; sourceTree = "<group>"; };
+		CB2ADAA321C5D95500F61593 /* SourceListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceListViewMock.swift; sourceTree = "<group>"; };
 		DD42011EFED140F27726A7D3 /* Pods-NewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +204,7 @@
 			children = (
 				CB2ADA5C21C556A400F61593 /* Mocks */,
 				CB2ADA5121C54E3300F61593 /* Domain */,
+				CB2ADA9D21C5D67000F61593 /* Feature */,
 				CB2ADA2E21C53A5F00F61593 /* Info.plist */,
 			);
 			path = NewsTests;
@@ -286,6 +293,8 @@
 			children = (
 				CB2ADA5521C54EAD00F61593 /* SourceRequesterMock.swift */,
 				CB2ADA5921C5546300F61593 /* ArticleRequesterMock.swift */,
+				CB2ADAA121C5D6F900F61593 /* GetSourceListUseCaseMock.swift */,
+				CB2ADAA321C5D95500F61593 /* SourceListViewMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -364,6 +373,22 @@
 				CB2ADA9021C5AE0E00F61593 /* SourceTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CB2ADA9D21C5D67000F61593 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA9E21C5D69300F61593 /* SourceList */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		CB2ADA9E21C5D69300F61593 /* SourceList */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADA9F21C5D6C100F61593 /* SourceListPresenterTest.swift */,
+			);
+			path = SourceList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,9 +615,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2ADA5421C54E7F00F61593 /* GetSourceUseCaseTest.swift in Sources */,
+				CB2ADAA221C5D6F900F61593 /* GetSourceListUseCaseMock.swift in Sources */,
 				CB2ADA5621C54EAD00F61593 /* SourceRequesterMock.swift in Sources */,
 				CB2ADA5A21C5546300F61593 /* ArticleRequesterMock.swift in Sources */,
 				CB2ADA5E21C556CB00F61593 /* GetArticlesUseCaseTest.swift in Sources */,
+				CB2ADAA421C5D95500F61593 /* SourceListViewMock.swift in Sources */,
+				CB2ADAA021C5D6C100F61593 /* SourceListPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

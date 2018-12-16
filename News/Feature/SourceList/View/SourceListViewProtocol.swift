@@ -11,4 +11,6 @@ import Foundation
 protocol SourceListViewProtocol: BaseViewProtocol {
     
     func reloadList(source: [Source])
+    
+    func callArticleListView(with sourceId: String)
 }

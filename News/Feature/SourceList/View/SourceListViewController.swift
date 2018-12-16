@@ -63,4 +63,8 @@ extension SourceListViewController: SourceListViewProtocol {
         self.sourceList = source
         self.sourceListTableView.reloadData()
     }
+    
+    func callArticleListView(with sourceId: String) {
+        
+    }
 }

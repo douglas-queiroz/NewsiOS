@@ -19,7 +19,7 @@ class GetSourceUseCaseTest: XCTestCase {
         self.getSourceListUseCase = GetSourceListUseCase(sourceRequester: requesterMock)
     }
 
-    func testGetSource() {
+    func testGetSourceList() {
         
         requesterMock.sourceList = [Source(), Source(), Source()]
         
@@ -31,7 +31,7 @@ class GetSourceUseCaseTest: XCTestCase {
         }
     }
     
-    func testGetSource_withError() {
+    func testGetSourceList_withError() {
         
         requesterMock.error = ErrorNetwork()
         

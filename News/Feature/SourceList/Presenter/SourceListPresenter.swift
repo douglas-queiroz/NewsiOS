@@ -20,8 +20,14 @@ class SourceListPresenter: SourceListPresenterProtocol {
     }
     
     func loadSourceList() {
+        view.showLoading()
+        
         getSourceListUseCase.getSourceList { (sourceList, error) in
+            
+            self.view.hideLoading()
+            
             if let sourceList = sourceList {
+                self.sourceList = sourceList
                 self.view.reloadList(source: sourceList)
             } else {
                 self.view.showMessage(title: "Error", message: "Error msg", handler: nil)
@@ -30,6 +36,8 @@ class SourceListPresenter: SourceListPresenterProtocol {
     }
     
     func selectSource(index: Int) {
-        
+        if let source = sourceList?[index], let sourceId = source.id {
+            view.callArticleListView(with: sourceId)
+        }
     }
 }

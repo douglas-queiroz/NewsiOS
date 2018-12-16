@@ -19,7 +19,7 @@ class GetArticlesUseCaseTest: XCTestCase {
         getArticleListUseCase = GetArticleListUseCase(articleRequester: requesterMock)
     }
     
-    func testGetSource() {
+    func testGetArticleList() {
         let source = "source"
         requesterMock.articleList = [Article(), Article(), Article()]
         
@@ -32,7 +32,7 @@ class GetArticlesUseCaseTest: XCTestCase {
         })
     }
     
-    func testGetSource_withError() {
+    func testGetArticleList_withError() {
         let source = "source"
         requesterMock.error = ErrorNetwork()
         
