@@ -18,6 +18,6 @@ target 'News' do
   
   #Util
   pod 'PKHUD', '~> 5.0'
-  pod 'SDWebImage/WebP'
+  pod 'SDWebImage', '~> 4.0'
 
 end

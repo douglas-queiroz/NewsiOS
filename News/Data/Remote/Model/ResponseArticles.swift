@@ -11,7 +11,7 @@ import ObjectMapper
 
 class ResponseArticles: ResponseBase {
     
-    private let FIELD_SOURCES_KEY = "sources"
+    private let FIELD_SOURCES_KEY = "articles"
     
     var articles: [Article]?
     

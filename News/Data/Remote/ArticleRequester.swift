@@ -14,6 +14,7 @@ class ArticleRequester: ArticleRequesterProtocol {
     func getArticleList(source: String, responseCompletion: @escaping ReponseArticleListCompletion) {
         
         request(NewsApi.getArticles(source: source))
+            .debugLog()
             .responseObject { (response: DataResponse<ResponseArticles>) in
             
                 switch response.result {

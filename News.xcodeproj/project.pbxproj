@@ -58,6 +58,10 @@
 		CB2ADAB921C5E65D00F61593 /* GetArticleListUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADAB821C5E65D00F61593 /* GetArticleListUseCaseMock.swift */; };
 		CB2ADABE21C5EABC00F61593 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADABC21C5EABC00F61593 /* ArticleTableViewCell.swift */; };
 		CB2ADABF21C5EABC00F61593 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2ADABD21C5EABC00F61593 /* ArticleTableViewCell.xib */; };
+		CB2ADAC621C5ED1A00F61593 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADAC421C5ED1A00F61593 /* ArticleListViewController.swift */; };
+		CB2ADAC721C5ED1A00F61593 /* ArticleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2ADAC521C5ED1A00F61593 /* ArticleListViewController.xib */; };
+		CB2ADAC921C5F64A00F61593 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADAC821C5F64A00F61593 /* UIImageExtension.swift */; };
+		CB2ADACC21C5F69D00F61593 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2ADACB21C5F69D00F61593 /* ImageUtil.swift */; };
 		DDED4A43618ABAD947E89703 /* Pods_NewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D051709304BAA9C8C47ADD /* Pods_NewsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +135,10 @@
 		CB2ADAB821C5E65D00F61593 /* GetArticleListUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticleListUseCaseMock.swift; sourceTree = "<group>"; };
 		CB2ADABC21C5EABC00F61593 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		CB2ADABD21C5EABC00F61593 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		CB2ADAC421C5ED1A00F61593 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		CB2ADAC521C5ED1A00F61593 /* ArticleListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListViewController.xib; sourceTree = "<group>"; };
+		CB2ADAC821C5F64A00F61593 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		CB2ADACB21C5F69D00F61593 /* ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
 		DD42011EFED140F27726A7D3 /* Pods-NewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -317,9 +325,11 @@
 		CB2ADA6121C55AF800F61593 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CB2ADACA21C5F68400F61593 /* Util */,
 				CB2ADA6221C55B2500F61593 /* Configuration.swift */,
 				CB2ADA6421C55C8F00F61593 /* Constants.swift */,
 				CB2ADA9921C5C2E300F61593 /* RequestExtension.swift */,
+				CB2ADAC821C5F64A00F61593 /* UIImageExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -431,6 +441,8 @@
 			isa = PBXGroup;
 			children = (
 				CB2ADAA921C5E11400F61593 /* ArticleListViewProtocol.swift */,
+				CB2ADAC421C5ED1A00F61593 /* ArticleListViewController.swift */,
+				CB2ADAC521C5ED1A00F61593 /* ArticleListViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -450,6 +462,14 @@
 				CB2ADAB621C5E5FE00F61593 /* ArticleListPresenterTest.swift */,
 			);
 			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		CB2ADACA21C5F68400F61593 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ADACB21C5F69D00F61593 /* ImageUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2ADA2221C53A5F00F61593 /* LaunchScreen.storyboard in Resources */,
+				CB2ADAC721C5ED1A00F61593 /* ArticleListViewController.xib in Resources */,
 				CB2ADA9C21C5C39400F61593 /* Environment.plist in Resources */,
 				CB2ADA9221C5AE0E00F61593 /* SourceTableViewCell.xib in Resources */,
 				CB2ADA1F21C53A5F00F61593 /* Assets.xcassets in Resources */,
@@ -591,7 +612,6 @@
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -602,7 +622,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -641,6 +660,7 @@
 				CB2ADA4A21C5464500F61593 /* GetArticleListUseCaseProtocol.swift in Sources */,
 				CB2ADAAC21C5E1A100F61593 /* ArticleListPresenterProtocol.swift in Sources */,
 				CB2ADA7C21C5A2B900F61593 /* SourceListPresenter.swift in Sources */,
+				CB2ADAC621C5ED1A00F61593 /* ArticleListViewController.swift in Sources */,
 				CB2ADA9121C5AE0E00F61593 /* SourceTableViewCell.swift in Sources */,
 				CB2ADA7A21C5A23A00F61593 /* SourceListPresenterProtocol.swift in Sources */,
 				CB2ADA3B21C53EFE00F61593 /* Source.swift in Sources */,
@@ -660,7 +680,9 @@
 				CB2ADA4E21C5472500F61593 /* ArticleRequesterProtocol.swift in Sources */,
 				CB2ADA4821C5447700F61593 /* GetSourceListUseCase.swift in Sources */,
 				CB2ADA7221C5756A00F61593 /* ArticleRequester.swift in Sources */,
+				CB2ADAC921C5F64A00F61593 /* UIImageExtension.swift in Sources */,
 				CB2ADA8921C5A74700F61593 /* BaseViewProtocol.swift in Sources */,
+				CB2ADACC21C5F69D00F61593 /* ImageUtil.swift in Sources */,
 				CB2ADA8321C5A5E100F61593 /* BaseViewController.swift in Sources */,
 				CB2ADA4121C5406B00F61593 /* SourceRequesterProtocol.swift in Sources */,
 				CB2ADA1D21C53A5E00F61593 /* News.xcdatamodeld in Sources */,

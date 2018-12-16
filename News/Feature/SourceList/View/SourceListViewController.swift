@@ -55,6 +55,11 @@ extension SourceListViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        presenter.selectSource(index: indexPath.row)
+    }
 }
 
 extension SourceListViewController: SourceListViewProtocol {
@@ -65,6 +70,9 @@ extension SourceListViewController: SourceListViewProtocol {
     }
     
     func callArticleListView(with sourceId: String) {
+        let articleListVC = ArticleListViewController()
+        articleListVC.sourceId = sourceId
         
+        self.navigationController?.pushViewController(articleListVC, animated: true)
     }
 }

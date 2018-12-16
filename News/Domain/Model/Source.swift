@@ -30,7 +30,7 @@ class Source: Mappable {
     }
     
     func mapping(map: Map) {
-        title       <- map[FIELD_ID_KEY]
+        id       <- map[FIELD_ID_KEY]
         title       <- map[FIELD_TITLE_KEY]
         description <- map[FIELD_DESCRIPTION_KEY]
         url         <- map[FIELD_URL_KEY]
