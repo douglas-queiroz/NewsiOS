@@ -13,5 +13,5 @@ struct NetworkConstants {
     static let API_PARAM_KEY = "apiKey"
     static let LANGUAGE_PARAM_KEY = "language"
     static let COUNTRY_PARAM_KEY = "country"
-    static let DOMAINS_PARAM_KEY = "domains"
+    static let SOURCE_PARAM_KEY = "sources"
 }

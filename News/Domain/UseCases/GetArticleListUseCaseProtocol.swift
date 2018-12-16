@@ -12,5 +12,5 @@ protocol GetArticleListUseCaseProtocol {
     
     typealias GetArticleListCompletion = ([Article]?, Error?) -> Void
     
-    func getArticle(domains: String, listener: @escaping GetArticleListCompletion)
+    func getArticle(source: String, listener: @escaping GetArticleListCompletion)
 }

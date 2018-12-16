@@ -17,13 +17,13 @@ enum NewsApi: URLRequestConvertible {
     }
     
     case getSources
-    case getArticles(domains: String)
+    case getArticles(source: String)
     
     var endPoint : String {
         
         switch self {
         case .getSources: return "/sources"
-        case .getArticles: return "/everything"
+        case .getArticles: return "/top-headlines"
         }
     }
     
@@ -39,7 +39,7 @@ enum NewsApi: URLRequestConvertible {
         
         switch self {
         case .getArticles(let domains):
-            params[NetworkConstants.DOMAINS_PARAM_KEY] = domains
+            params[NetworkConstants.SOURCE_PARAM_KEY] = domains
             return params
         default:
             return params

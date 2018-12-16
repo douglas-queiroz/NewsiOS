@@ -12,5 +12,5 @@ protocol ArticleRequesterProtocol {
     
     typealias ReponseArticleListCompletion = ([Article]?, Error?) -> Void
     
-    func getArticleList(domains: String, responseCompletion: @escaping ReponseArticleListCompletion)
+    func getArticleList(source: String, responseCompletion: @escaping ReponseArticleListCompletion)
 }

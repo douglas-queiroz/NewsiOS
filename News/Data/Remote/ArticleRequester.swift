@@ -11,9 +11,9 @@ import AlamofireObjectMapper
 
 class ArticleRequester: ArticleRequesterProtocol {
     
-    func getArticleList(domains: String, responseCompletion: @escaping ReponseArticleListCompletion) {
+    func getArticleList(source: String, responseCompletion: @escaping ReponseArticleListCompletion) {
         
-        request(NewsApi.getArticles(domains: domains))
+        request(NewsApi.getArticles(source: source))
             .responseObject { (response: DataResponse<ResponseArticles>) in
             
                 switch response.result {
